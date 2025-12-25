@@ -2,3 +2,6 @@ rootfs/
 images/
 containers/
 tensorbox 
+rootfs_base/
+go.sum
+*.log
