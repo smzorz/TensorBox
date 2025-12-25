@@ -30,7 +30,7 @@ func UmountOverlay(c *container.Container) error {
 		filepath.Join(c.MergedDir, "dev", "pts"),
 		filepath.Join(c.MergedDir, "dev", "shm"),
 		filepath.Join(c.MergedDir, "dev"),
-		filepath.Join(c.MergedDir, "usr", "lib", "wsl"), // 建议加上这一行
+		filepath.Join(c.MergedDir, "usr", "lib", "wsl"),
 	}
 	for _, s := range subs {
 		_ = syscall.Unmount(s, syscall.MNT_DETACH)
